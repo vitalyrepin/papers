@@ -1,0 +1,56 @@
+digraph G {
+	node [shape = box ratio = compress rankdir = RL]
+	mainContention [label = "Main contention: Both institutions and resource endowments are critical for the development,\l not just one or the other. Role of institutions is overestimated."]
+
+	reason1 [label = "Objection: Modern economists tend to explain\lthe differences in economic development\lby single-factor: Institutions."]
+	example11 [label = "Evidence: Papers by William Easterly\l and Ross Levine; Daron Acemoglu,\l Simon Johnson, and James Robinson;\lDani Rodrik, Arvind Subramanian,\l and Francesco Trebbi."]
+
+	reason2 [label = "Rebuttal: Barriers for economic development\lin the poorest countries are far more complex\lthan institutions shortcomings."]
+	example21 [label = "Evidence: Deceases (tuberculosis,\lAIDS, malaria); Depletion of soil\l nutrients; More roads are needed."]
+
+	reason3 [label = "Reason: high transport costs\l of the hinterland is the barrier\l for economic development."]
+	example31 [label = "Evidence: Example for central Asia\l and Africa from Adam Smith, 1776."]
+
+	reason4 [label="Reason: Deceases are able to\lcut off economic development."]
+	example41 [label = "Evidence: Hong Hong SAR caused\l severe disruption in travel."]
+
+	reason5 [label = "Reason: When countries that are remote\l also have few skilled workers,\l these workers are much more likely\l to emigrate than to attract\l physical capital into the country."]
+	example51 [label = "Evidence: It's hard for China to attract investments into its western parts.\lMassive shift of labor to the east happens instead."]
+
+	reason6 [label = "Reason: The poorest countries are not\lattractive to private capital inflows:\l initial low income, small populations\l that live far from coasts and are\lburdened by disease."]
+	reason7 [label = "Reason: Institutions and geography matter."]
+	reason8 [label = "Reason: Special investments\l are needed (to fight deceases,\lbuild roads etc)."]
+
+	reason9 [label = "Reason: Free-market approach\l (migration) often leads to violence."]
+	example91 [label = "Evidence: migration from Burkina Faso\l to Côte d’Ivoire was one trigger of\lrecent ethnic riots and civil violence."]
+
+	reason10 [label = "Reason: International community\l should set actual developmental goals\l for poor regions and help them instead\l of waiting for the economic results."]
+	reason11 [label = "Reason: Poverty traps are real:\l countries can be too poor to\l find their own way out of poverty."]
+
+	mainContention -> reason1;
+	reason1 -> example11
+
+	reason1 -> reason2
+	reason2 -> example21;
+
+	reason2 -> reason3
+	reason3 -> example31
+
+	reason2 -> reason4
+	reason4 -> example41
+
+        reason3 -> reason5
+	reason5 -> example51
+
+	reason2 -> reason6
+
+	reason10 -> reason11
+
+	mainContention -> reason7
+	reason7 -> reason8
+
+	reason8 -> reason9
+	reason9 -> example91
+
+	mainContention -> reason10
+}
