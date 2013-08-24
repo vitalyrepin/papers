@@ -60,9 +60,6 @@ $(MAIN_FNAME).pdf: $(DEPS) $(IMAGES)
 %.pdf:          %.tex
 		latexmk -pdf $<
 
-# Display relevant warnings
-		egrep -i "(Reference|Citation).*undefined" $*.log ; true
-
 clean:
 		latexmk -c
 		$(RM) -f *.bbl
